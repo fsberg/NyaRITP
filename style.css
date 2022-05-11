@@ -7,7 +7,7 @@
     --light-color: #666;
     --light-bg: #eee;
     --border: .2rem solid rgba(0,0,0,.1);
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
 }
 
 *{
@@ -109,16 +109,26 @@ section{
 }
 
 .home .content{
-    color: var(--white);
+    
     background-color: var(--black);
     opacity: 85%;
     padding: 2rem;
     border-radius: .5rem;
-    max-width: 75%;
+    width: 67rem;
+}
+
+.home .content h1{
+    color: var(--white);
+    font-size: 5rem;
+    text-transform: uppercase;
+    
 }
 
 .home .content p{
+    line-height: 2;
     font-size: 1.4rem;
+    color: var(--white);
+    padding: 1rem 0;
 }
 
 
