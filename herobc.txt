@@ -1,0 +1,45 @@
+.hero_wrapper h1{
+    font-family: 'Paytone One', sans-serif;
+    position: absolute;
+    font-size: 120px;
+    line-height: 82px;
+    color: var(--bg-color);
+    text-shadow: 0 10px 8px rgb(19, 19, 19),0 -2px 1px rgb(202, 198, 198);
+    letter-spacing: -4px;
+    padding: 200px;
+    border: 2px solid red;
+}
+
+.hero_content {
+    width: 500px;
+    position: absolute;
+    
+    
+}
+
+.hero_footer{
+    background-color: var(--prim-color);
+    opacity: 0.8;
+    height: 6em;
+    margin-top: 40px;
+    bottom: 0;
+    position: absolut;
+}
+
+
+
+  <h1>Attaxera IT</h1>
+                <div class="hero_content">
+                  <p>Din IT-Partner</p>
+                  <button>Call to action</button>
+                </div>
+
+                <div class="hero_footer"></div>
+            </div>
+
+            <div class="hero_info">
+              <div class="hero_info_text">
+                <h1>INFO</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aliquid temporibus architecto nesciunt deleniti odit vel maxime repellendus molestias sed facere animi? Ut!</p>
+              </div>
+              <div class="hero_ino_image"></div>
