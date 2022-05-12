@@ -42,6 +42,17 @@ html{
 
 section{
     padding: 7rem 2rem;
+    
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+
 }
 
 .link-btn{
@@ -166,32 +177,144 @@ section{
 
 /* services */
 
-.services .fa-solid{
-    font-size: 15rem;
-}
-/* contact */
 
-.contact .contact_card{
-    padding: 3rem;
+.services{
+    background-color: var(--light-bg);   
 }
 
-.contact .contact_card span{
-   font-weight: 800;
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 2rem;
 }
-.contact .contact_card h3{
+
+.services .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+
+.services .box-container .box .fa-solid{
+    font-size: 8rem;
     color: var(--blue);
-    font-size: 2rem;
+    margin: 1rem 0;
 }
 
-.contact .contact_card h2{
-    color: var(--black);
+
+.services .box-container .box h3{
     font-size: 2.5rem;
+    text-transform: capitalize;
+    padding: 1rem 0;
+    color: var(--black);
 }
 
-.contact .contact_card p{
+
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+/* support */
+
+.support{
+
+}
+.support .box-container .box{
+
+
+}
+
+
+/* contact */
+.contact {
+    background-color: var(--light-bg);
+}
+.contact .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem 2rem; 
+} 
+
+.contact .box-container .box{
+    padding: 1rem;
+    text-align: left;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.contact .box span{
+   font-weight: bolder
+}
+.contact .box h3{
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.contact .box h2{
+    color: var(--blue);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.contact .box p{
     color: var(--black);
     font-size: 1.5rem;
 }
+
+.footer{
+    background-color: var(--black);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem; 
+}
+
+
+.footer .box-container .box{
+    text-align: center;
+}
+
+.footer .box-container i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.footer .box-container h3{
+    color: var(--white);
+    font-size: 2rem;
+    margin: 1rem 0;
+
+    
+}
+
+.footer .box-container p{
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 2;
+    
+}
+
+.footer .credit{
+    color: var(--white);
+}
+
+.footer .credit span{
+    color: var(--blue);
+}
+
 /* MOBILE */
 
 @media (max-width:991px) {
@@ -266,5 +389,14 @@ section{
 
     .home .content{
         
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+    .contact .contact_card{
+        width: 2rem;
+        justify-content: left;
     }
 }
