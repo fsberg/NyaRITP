@@ -146,9 +146,63 @@
 
           <h1 class="heading">Support</h1>
           <div class="row align-items-center justify-content-center box-container vh-50" >
-          <div class="box link-btn">IT-Support</div> 
 
 
+          <div class="box link-btn" id="it-btn">IT-Support</div> 
+
+
+          
+          <div class="it-form form">
+
+            <div id="closeform" class="fas fa-times"></div>
+
+            <h1 class="heading">Felanmälan</h1>
+
+              <form action="">
+
+                  <div class="box">
+                    <input type="text" id="serienummer" placeholder="Serienummer:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="text" id="företagsnamn" placeholder="Företagsnamn:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="text" id="namn" placeholder="Kontakt Person:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="tel" id="tele" placeholder="Telefonummer:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="email" id="epost" placeholder="Epost:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <textarea id="message" rows="4" placeholder="Felanmälan:" required></textarea>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="link-btn">
+                    <input type="submit" value="Skicka" name="submit"> 
+                  </div>
+
+                  <div class="link-btn">
+                    <input type="reset" value="Rensa">
+                  </div>
+                  
+              </form>
+            
+
+
+          </div>
 
 
 
@@ -211,11 +265,13 @@
 
 
 
-          <div class="box link-btn">Förbrukning och toner</div>
+          <div class="box link-btn" id="sup-btn">Förbrukning och toner</div>
 
-          <div class="supply-form form">
+          <div class="sup-form form">
 
-            <h1 class="heading">Felanmälan</h1>
+            <div id="closeform" class="fas fa-times"></div>
+
+            <h1 class="heading">Tonerbeställning</h1>
 
               <form action="">
 
@@ -258,7 +314,7 @@
                   </div>
                   
               </form>
-            
+             
 
 
           </div>
@@ -268,7 +324,62 @@
 
 
 
-          <div class="box link-btn">Rapport Mätarställning</div>
+          <div class="box link-btn" id="count-btn">Rapport Mätarställning</div>
+
+          <div class="count-form form">
+
+            <div id="closeform" class="fas fa-times"></div>
+
+            <h1 class="heading">Rapportera Mätarställning</h1>
+
+              <form action="">
+
+                  <div class="box">
+                    <input type="text" id="serienummer" placeholder="Serienummer:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="text" id="företagsnamn" placeholder="Företagsnamn:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="text" id="namn" placeholder="Kontakt Person:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="tel" id="tele" placeholder="Telefonummer:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="email" id="epost" placeholder="Epost:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <textarea id="message" rows="4" placeholder="Felanmälan:" required></textarea>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="link-btn">
+                    <input type="submit" value="Skicka" name="submit"> 
+                  </div>
+
+                  <div class="link-btn">
+                    <input type="reset" value="Rensa">
+                  </div>
+                  
+              </form>
+             
+
+
+          </div>
+
+
+
         </div> 
       </div>
       </section>

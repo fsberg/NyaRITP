@@ -258,6 +258,20 @@ section{
     width: 100%;
 }
 
+    /* ITSUPPORT */
+
+.support .box-container .it-form{
+    display: none;
+    position: fixed;
+    top: 10rem;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.support .box-container .it-form.active{
+    display: block;
+}
+
 
     /* FELANMÄLAN */
 .support .box-container .fel-form{
@@ -272,13 +286,29 @@ section{
 }
 
     /* TONERANMÄLAN */
-.support .box-container .supply-form{
+.support .box-container .sup-form{
     display: none;
+    position: fixed;
+    top: 10rem;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
 }
-.support .box-container .supply-form.active{
+.support .box-container .sup-form.active{
     display: block;
 }
+    /* MÄTARSTÄLLNING */
 
+.support .box-container .count-form{
+    display: none;
+    position: fixed;
+    top: 10rem;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+.support .box-container .count-form.active{
+       display: block;
+}
+    
 
 
 /* contact */
