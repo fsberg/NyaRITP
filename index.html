@@ -81,9 +81,16 @@
           
       </section>
 
+      
       <section class="services" id="services">
         <h1 class="heading">Våra Tjänster</h1>
         <div class="box-container container">
+
+          <div class="box">
+            <i class="fa-solid fa-computer"></i>
+            <h3>IT-Support</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, nam.</p>
+          </div>
           
           <div class="box">
             <i class="fa-solid fa-print"></i>
@@ -115,25 +122,155 @@
             <h3>Lokal Service</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, nam.</p>
           </div>
-
+        
+        </div>
+        <h1 class="heading">Sammarbetspartner</h1>
+        <div class="box-container container">
+          
           <div class="box">
-            <i class="fa-solid fa-computer"></i>
-            <h3>IT-Support</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, nam.</p>
-          </div>
+            <img src="assets/animo.png" alt="">
+            
+            <img src="assets/fortinet-1.png" alt="">
+            <img src="assets/veeam-1.png" alt="">
+            <img src="assets/Playipp-1.png" alt="">
+            <img src="assets/Ricoh-1-1.png" alt="">
+            
 
+          </div>
         </div>
       </section>
 
       <section class="support" id="support">
-        <h1 class="heading">Support</h1>
-        <!-- <div class="row align-items-center justify-content-center box-container vh-100" >
-          <div class="box link-btn">IT-Support</div>
-          <div class="box link-btn">Felanmälan/Service</div>
+
+        <div class="box-container container">
+
+          <h1 class="heading">Support</h1>
+          <div class="row align-items-center justify-content-center box-container vh-50" >
+          <div class="box link-btn">IT-Support</div> 
+
+
+
+
+
+
+          <div class="box link-btn" id="fel-btn">Felanmälan/Service</div>         
+          <div class="fel-form form">
+
+            <div id="closeform" class="fas fa-times"></div>
+
+            <h1 class="heading">Felanmälan</h1>
+
+              <form action="">
+
+                  <div class="box">
+                    <input type="text" id="serienummer" placeholder="Serienummer:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="text" id="företagsnamn" placeholder="Företagsnamn:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="text" id="namn" placeholder="Kontakt Person:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="tel" id="tele" placeholder="Telefonummer:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="email" id="epost" placeholder="Epost:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <textarea id="message" rows="4" placeholder="Felanmälan:" required></textarea>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="link-btn">
+                    <input type="submit" value="Skicka" name="submit"> 
+                  </div>
+
+                  <div class="link-btn">
+                    <input type="reset" value="Rensa">
+                  </div>
+                  
+              </form>
+            
+
+
+          </div>
+
+
+
+
+
+
           <div class="box link-btn">Förbrukning och toner</div>
+
+          <div class="supply-form form">
+
+            <h1 class="heading">Felanmälan</h1>
+
+              <form action="">
+
+                  <div class="box">
+                    <input type="text" id="serienummer" placeholder="Serienummer:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="text" id="företagsnamn" placeholder="Företagsnamn:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="text" id="namn" placeholder="Kontakt Person:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="tel" id="tele" placeholder="Telefonummer:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <input type="email" id="epost" placeholder="Epost:" required>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="box">
+                    <textarea id="message" rows="4" placeholder="Felanmälan:" required></textarea>
+                    <small class="from_error"></small>
+                  </div>
+
+                  <div class="link-btn">
+                    <input type="submit" value="Skicka" name="submit"> 
+                  </div>
+
+                  <div class="link-btn">
+                    <input type="reset" value="Rensa">
+                  </div>
+                  
+              </form>
+            
+
+
+          </div>
+
+
+
+
+
+
           <div class="box link-btn">Rapport Mätarställning</div>
-        </div>
-       -->
+        </div> 
+      </div>
       </section>
 
       <section class="contact" id="contact">
@@ -238,10 +375,11 @@
             <h3>Uddevalla</h3>
             <h3>Telefon</h3>
             <i class="fas fa-phone"></i>
-            <p>0522-00 00 00</p>
+            <p>0522-64 55 50</p>
             <H3>Address</H3>
             <i class="fas fa-map-marker-alt"></i>
-            <p>Kurödsvägen 10</p>
+            <p>Kurödsvägen 10
+              <br>451 55  Uddevalla</p>
             
           </div>
 
@@ -249,10 +387,11 @@
             <h3>Skövde</h3>
             <h3>Telefon</h3>
             <i class="fas fa-phone"></i>
-            <p>0522-00 00 00</p>            
+            <p>0500-49 59 90</p>            
             <H3>Address</H3>
             <i class="fas fa-map-marker-alt"></i>
-            <p>Rattvägen 00</p>
+            <p>Rattvägen 6
+              <br>541 34  Skövde</p>
           </div>
 
           <div class="box">
