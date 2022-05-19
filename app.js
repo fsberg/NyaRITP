@@ -2,20 +2,22 @@ let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .nav');
 let header = document.querySelector('.header');
 
-let closeform = document.querySelector('#closeform');
+let it_closeform = document.querySelector('.it-form #closeform');
+let fel_closeform = document.querySelector('.fel-form #closeform');
+let sup_closeform = document.querySelector('.sup-form #closeform');
+let count_closeform = document.querySelector('.count-form #closeform');
 
 let it_btn = document.querySelector('#it-btn');
-let itform = document.querySelector('.support .box-container .form');
+let itform = document.querySelector('.support .box-container .it-form');
 
 let fel_btn = document.querySelector('#fel-btn');
-let felform = document.querySelector('.support .box-container .form');
-
+let felform = document.querySelector('.support .box-container .fel-form');
 
 let sup_btn = document.querySelector('#sup-btn');
-let supform = document.querySelector('.support .box-container .form');
+let supform = document.querySelector('.support .box-container .sup-form');
 
 let count_btn = document.querySelector('#count-btn');
-let countform = document.querySelector('.support .box-container .form');
+let countform = document.querySelector('.support .box-container .count-form');
 
 // mobil meny
 
@@ -46,20 +48,17 @@ it_btn.onclick = () =>{
    
 }
 
-closeform.onclick = () =>{
+it_closeform.onclick = () =>{
    console.log('stänger');
    itform.classList.toggle('active');
 }
 
-
-
 fel_btn.onclick = () =>{
    console.log('öppnar felanmälan');
    felform.classList.toggle('active');
-   
 }
 
-closeform.onclick = () =>{
+fel_closeform.onclick = () =>{
    console.log('stänger');
    felform.classList.toggle('active');
 }
@@ -67,21 +66,19 @@ closeform.onclick = () =>{
 sup_btn.onclick = () =>{
    console.log('öppnar toner');
    supform.classList.toggle('active');
-   
 }
 
-closeform.onclick = () =>{
+sup_closeform.onclick = () =>{
    console.log('stänger');
    supform.classList.toggle('active');
 }
 
 count_btn.onclick = () =>{
    console.log('öppnar mätarställning');
-   countform.classList.toggle('active');
-   
+   countform.classList.toggle('active');  
 }
 
-closeform.onclick = () =>{
+count_closeform.onclick = () =>{
    console.log('stänger');
    countform.classList.toggle('active');
 }
