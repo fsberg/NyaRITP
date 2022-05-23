@@ -332,7 +332,7 @@ section{
 }
 .contact .box-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    grid-template-columns: 1fr 1fr;    
     /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
     gap: 2rem 2rem; 
 } 
@@ -344,6 +344,9 @@ section{
     background-color: var(--white);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .contact .box span{
@@ -364,6 +367,15 @@ section{
 .contact .box p{
     color: var(--black);
     font-size: 1.5rem;
+}
+
+.contact .box .contact_photo{
+    width:200px;
+    height:200px;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    border: 2px solid var(--blue);
+    border-radius: .5rem;
 }
 
 .footer{
