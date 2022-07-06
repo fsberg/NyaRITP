@@ -52,7 +52,6 @@ section{
     text-transform: uppercase;
     font-weight: bolder;
     margin-bottom: 3rem;
-
 }
 
 .link-btn{
@@ -126,8 +125,6 @@ section{
     background: url(assets/herobg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-
-
 }
 
 .home .content{
@@ -405,15 +402,12 @@ section{
     color: var(--white);
     font-size: 2rem;
     margin: 1rem 0;
-
-    
 }
 
 .footer .box-container p{
     color: var(--white);
     font-size: 1.5rem;
     line-height: 2;
-    
 }
 
 .footer .credit{
