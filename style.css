@@ -98,8 +98,9 @@ section{
     color: var(--blue);
 }
 
-.header .logo2 img{
-    width: 20rem;
+
+.header .logotype img{
+    width: 30rem;
 }
 
 .header .nav a{
@@ -408,6 +409,11 @@ section{
     color: var(--white);
     font-size: 1.5rem;
     line-height: 2;
+}
+
+.footer .qloser img{
+    width: 15rem;
+    padding: 20px 10px;
 }
 
 .footer .credit{

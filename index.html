@@ -22,7 +22,9 @@
           <div class="row align-items-center justify-content-between">
             <div class="logotype">
               <!-- <a href="#home" class="logo2"><img src="/assets/ricohlogo.png"></a> -->
-              <a href="#home" class="logo">Attaxera <span>IT</span></a>
+              <!-- <a href="#home" class="logo">Attaxera <span>IT</span></a> -->
+
+              <img src="/assets/ritplogoblue.png" href="#home" class="logoimg">
             </div>
 
             <nav class="nav">
@@ -30,10 +32,10 @@
               <a href="#about">Om oss</a>
               <a href="#services">Våra Tjänster</a>
               <a href="#support">Support</a>
-              <a href="#contact">Kontakt</a>  
+              <a href="#contact">Personal</a>  
             </nav>
 
-            <a href="#contact" class="link-btn">Kontakta oss</a>
+            <a href="#footer" class="link-btn">Kontakta oss</a>
 
             <div id="menu-btn" class="fas fa-bars"></div>
 
@@ -163,12 +165,9 @@
 
             <h1 class="heading">IT-Support</h1>
 
-              <form action="">
-
-                  <div class="box">
-                    <input type="text" id="serienummer" placeholder="Serienummer:" required>
-                    <small class="from_error"></small>
-                  </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ipsa odio <br> distinctio quibusdam hic, dignissimos, nam libero animi corporis quasi modi quisquam <br> quaerat inventore quidem rem dolorem, minima numquam laboriosam.</p>
+<!-- 
+              <form class="email_form" action="#">
 
                   <div class="box">
                     <input type="text" id="företagsnamn" placeholder="Företagsnamn:" required>
@@ -191,14 +190,16 @@
                   </div>
 
                   <div class="box">
-                    <textarea id="message" rows="4" placeholder="Felanmälan:" required></textarea>
+                    <textarea class="msg" rows="4" placeholder="Felanmälan:" required></textarea>
                     <small class="from_error"></small>
                   </div>
 
                   
                     <input class="link-btn" type="submit" value="Skicka" name="submit"> 
                   
-                    <input class="link-btn" type="reset" value="Rensa">
+                    <input class="link-btn" type="reset" value="Rensa"> -->
+
+                    <a href="https://get.teamviewer.com/ricohitp-remotesupport" target="_blank" class="link-btn">Remote Support</a>
                   
                   
               </form>
@@ -208,8 +209,6 @@
           </div>
 
 
-
-
                  
           <div class="fel-form form">
 
@@ -217,7 +216,7 @@
 
             <h1 class="heading">Felanmälan</h1>
 
-              <form action="">
+              <form action="sendMsg">
 
                   <div class="box">
                     <input type="text" id="serienummer" placeholder="Serienummer:" required>
@@ -295,7 +294,7 @@
                   </div>
 
                   <div class="box">
-                    <textarea id="message" rows="4" placeholder="Felanmälan:" required></textarea>
+                    <textarea id="message" rows="4" placeholder="Meddelande:" required></textarea>
                     <small class="from_error"></small>
                   </div>
 
@@ -365,7 +364,7 @@
       </section>
 
       <section class="contact" id="contact">
-        <h1 class="heading">Kontakt</h1>
+        <h1 class="heading">Personal</h1>
         <div class="box-container container">
           <box>
             <div class="box">
@@ -431,12 +430,15 @@
             <img class="contact_photo" src="/assets/staff1.png"  alt="">
           </div>
 
-          <!-- <div class="box">
+          <div class="box">
+            <div class="contact_content">
             <h3>IT</h3>
-            <h2>Andreas<br>Svärd</h2>
+            <h2>Johan<br>Norenberg</h2>
             <p><span>Tel: </span><br>0522-64 53 34</p>
-            <p><span>Mail: </span><br>andreas.svard@ricohitp.se</p>
-          </div> -->
+            <p><span>Mail: </span><br>johan.norenberg@ricohitp.se</p>
+            </div>
+            <img class="contact_photo" src="/assets/staff1.png"  alt="">
+          </div>
 
           <div class="box">
             <div class="contact_content">
@@ -459,15 +461,6 @@
             <img class="contact_photo" src="/assets/staff1.png"  alt="">
           </div>
 
-          <div class="box">
-            <div class="contact_content">
-            <h3>Service/Support</h3>
-            <h2>Robert<br>Andersson</h2>
-            <p><span>Tel: </span><br>0500-49 59 94</p>
-            <p><span>Mail: </span><br>robert.andersson@ricohitp.se</p>
-            </div>
-            <img class="contact_photo" src="/assets/staff1.png"  alt="">
-          </div>
 
           <div class="box">
             <div class="contact_content">
@@ -498,6 +491,26 @@
             </div>
             <img class="contact_photo" src="/assets/staff1.png"  alt="">
           </div>
+
+          <div class="box">
+            <div class="contact_content">
+            <h3>Service/Support</h3>
+            <h2>Willian<br>Gommerud</h2>
+            <p><span>Tel: </span><br>0500-49 59 92</p>
+            <p><span>Mail: </span><br>willian.gommerud@ricohitp.se</p>
+            </div>
+            <img class="contact_photo" src="/assets/staff1.png"  alt="">
+          </div>
+
+          <div class="box">
+            <div class="contact_content">
+            <h3>Service/Support</h3>
+            <h2>Adam<br>Backrud</h2>
+            <p><span>Tel: </span><br>0522-64 53 37</p>
+            <p><span>Mail: </span><br>adam.backrud@ricohitp.se</p>
+            </div>
+            <img class="contact_photo" src="/assets/staff1.png"  alt="">
+          </div>
         
           <div class="box">
             <div class="contact_content">
@@ -514,7 +527,7 @@
 
       </section>
 
-      <section class="footer">
+      <section class="footer" id="footer">
         <div class="box-container container">
 
           <div class="box">
@@ -536,16 +549,19 @@
             <p>0500-49 59 90</p>            
             <H3>Address</H3>
             <i class="fas fa-map-marker-alt"></i>
-            <p>Rattvägen 6
-              <br>541 34  Skövde</p>
+            <p>C/o Bahnhof 
+              <br>Stationsvägen 7-9
+              <br>541 30  Skövde</p>
           </div>
 
           <div class="box">
             <h3>Epost</h3>
             <h3>kundservice</h3>
             <i class="fas fa-envelope"></i>
-            <p>kundservice@ricohitp.se</p>
-            <p> </p>            
+
+            <a href="mailto: kundservice@ricohitp.se">
+              <p>kundservice@ricohitp.se</p>
+            </a>           
             <h3>Öppettider</h3>
             <i class="fas fa-clock"></i>
             <p>Måndag-Fredag</p>
@@ -553,8 +569,17 @@
           </div>
         </div>
 
+        <div class="qloser">
+          <a href="https://qlosr.se/" target="_blank">
+            <img src="/assets/Qlosr_logo_white.png">
+          </a>  
+        </div>
+
         <div class="credit"> &copy copytight @ 2022 by <span>SloWeb</span> 2022 </div>
+        
       </section>
       <script src="app.js"></script>
+      <script src="mail.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>
