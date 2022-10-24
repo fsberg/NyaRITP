@@ -2,7 +2,7 @@
 
 :root{
     --blue: #007bff;
-    --black: #333;
+    --black: rgb(51, 51, 51);
     --white: #fff;
     --light-color: #666;
     --light-bg: #eee;
