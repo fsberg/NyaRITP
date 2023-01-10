@@ -7,8 +7,11 @@ let fel_closeform = document.querySelector('.fel-form #closeform');
 let sup_closeform = document.querySelector('.sup-form #closeform');
 let count_closeform = document.querySelector('.count-form #closeform');
 
+let glass = document.querySelector('.glass');
+
 let it_btn = document.querySelector('#it-btn');
 let itform = document.querySelector('.support .box-container .it-form');
+
 
 let fel_btn = document.querySelector('#fel-btn');
 let felform = document.querySelector('.support .box-container .fel-form');
@@ -45,12 +48,14 @@ window.onscroll = () =>{
 it_btn.onclick = () =>{
    console.log('öppnar IT');
    itform.classList.toggle('active');
+   glass.classList.toggle('active');
    
 }
 
 it_closeform.onclick = () =>{
    console.log('stänger');
    itform.classList.toggle('active');
+   glass.classList.toggle('active');
 }
 
 fel_btn.onclick = () =>{
