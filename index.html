@@ -24,12 +24,13 @@
                 <img src="/assets/ricohlogo.png">
               </a> -->
               <!-- <a href="#home" class="logo">Attaxera <span>IT</span></a> -->
-
-              <img src="assets/ritplogoblue.png" href="#home" class="logoimg">
+              <img src="assets/qlosrlogowhite.png" ref="#home" class="logoimg">
+              <img src="assets/ritplogoblue.png" href="#home" class="logoimg_ricoh">
             </div>
 
             <nav class="nav">
               <a href="#home">Home</a>
+              <a href="#news">Nyheter</a>
               <a href="#about">Om oss</a>
               <a href="#services">Våra Tjänster</a>
               <a href="#support">Support</a>
@@ -58,7 +59,32 @@
             </div>
           </div>
         </div>
+        <div class="down_arrow" onclick="scrollDown()">
+          <i class="fa-solid fa-angle-down"></i>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
       </section>
+
+      <!-- <section class="news " id="news">
+        <div class="container">
+
+          <div class="row align-items-center">
+            <div class="news_content content">
+              <span>Nyheter</span>
+              <h3>Qloser</h3>
+              <p>Qlosr Group AB har den 28 september 2022 ingått avtal om att förvärva samtliga aktier i det Uddevalla- och Skövdebaserade bolaget Attaxera IT Aktiebolag. Företaget marknadsför sig idag under namnet Ricoh IT Partner AB.
+
+              Qlosr Group AB är en helhetsleverantör av IT-lösningar vilket omfattar försäljning och leverans av paketerade prenumerationstjänster. Största delen av verksamheten bedrivs på den nordiska marknaden och består av paketerade IT-tjänster inom arbetsplats, nätverk och serverdrift. Bolagets tre primära målgrupper utgörs av små- och medelstora företag, offentlig sektor samt den privata skolsektorn med fokus på större nationella skolkoncerner.
+              
+              Med denna information som underlag hänvisar vi till vår koncerns hemsida enligt nedan. Vi kommer även framgent att uppdatera vår befintliga hemsida med ett nytt utseende och senaste nyheter!</p>
+            </div>
+            <div class="news_image">
+            <img src="assets/qlosrlogowhite.png" class="col-md-6 image" alt="Qlosr">
+            </div>
+          </div>      
+        </div>
+
+      </section> -->
 
       <section class="about" id="about">
         <div class="container">
@@ -165,47 +191,12 @@
 
           <div class="it-form form">
             <div id="closeform" class="fas fa-times"></div>
-
+            <div class="ruta">
             <h1 class="heading">IT-Support</h1>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ipsa odio <br> distinctio quibusdam hic, dignissimos, nam libero animi corporis quasi modi quisquam <br> quaerat inventore quidem rem dolorem, minima numquam laboriosam.</p>
-<!--
-              <form class="email_form" action="#">
-
-                  <div class="box">
-                    <input type="text" id="företagsnamn" placeholder="Företagsnamn:" required>
-                    <small class="from_error"></small>
-                  </div>
-
-                  <div class="box">
-                    <input type="text" id="namn" placeholder="Kontakt Person:" required>
-                    <small class="from_error"></small>
-                  </div>
-
-                  <div class="box">
-                    <input type="tel" id="tele" placeholder="Telefonummer:" required>
-                    <small class="from_error"></small>
-                  </div>
-
-                  <div class="box">
-                    <input type="email" id="epost" placeholder="Epost:" required>
-                    <small class="from_error"></small>
-                  </div>
-
-                  <div class="box">
-                    <textarea class="msg" rows="4" placeholder="Felanmälan:" required></textarea>
-                    <small class="from_error"></small>
-                  </div>
+            <a href="https://get.teamviewer.com/ricohitp-remotesupport" target="_blank" class="link-btn">Remote Support</a>
 
 
-                    <input class="link-btn" type="submit" value="Skicka" name="submit">
-
-                    <input class="link-btn" type="reset" value="Rensa"> -->
-
-                    <a href="https://get.teamviewer.com/ricohitp-remotesupport" target="_blank" class="link-btn">Remote Support</a>
-
-
-              </form>
+            </div>
           </div>
 
 
@@ -216,35 +207,35 @@
 
             <h1 class="heading">Felanmälan</h1>
 
-              <form action="sendMsg">
+              <form action="https://formsubmit.co/sloberg@gmail.com" method="POST" />
 
                   <div class="box">
-                    <input type="text" id="serienummer" placeholder="Serienummer:" required>
+                    <input type="text" name="serienummer" id="serienummer" placeholder="Serienummer:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <input type="text" id="företagsnamn" placeholder="Företagsnamn:" required>
+                    <input type="text" name="företagsnamn" id="företagsnamn" placeholder="Företagsnamn:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <input type="text" id="namn" placeholder="Kontakt Person:" required>
+                    <input type="text" name="kontakt" id="namn" placeholder="Kontakt Person:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <input type="tel" id="tele" placeholder="Telefonummer:" required>
+                    <input type="tel" name="Telefonummer" id="tele" placeholder="Telefonummer:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <input type="email" id="epost" placeholder="Epost:" required>
+                    <input type="email" name="email" id="epost" placeholder="Epost:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <textarea id="message" rows="4" placeholder="Felanmälan:" required></textarea>
+                    <textarea id="message" rows="4" name="Felanmälan" placeholder="Felanmälan:" required></textarea>
                     <small class="from_error"></small>
                   </div>
 
@@ -266,42 +257,43 @@
 
             <h1 class="heading">Förbrukning</h1>
 
-              <form action="">
+            <form action="https://formsubmit.co/sloberg@gmail.com" method="POST" />
 
-                  <div class="box">
-                    <input type="text" id="serienummer" placeholder="Serienummer:" required>
-                    <small class="from_error"></small>
-                  </div>
+            <div class="box">
+              <input type="text" name="serienummer" id="serienummer" placeholder="Serienummer:" required>
+              <small class="from_error"></small>
+            </div>
 
-                  <div class="box">
-                    <input type="text" id="företagsnamn" placeholder="Företagsnamn:" required>
-                    <small class="from_error"></small>
-                  </div>
+            <div class="box">
+              <input type="text" name="företagsnamn" id="företagsnamn" placeholder="Företagsnamn:" required>
+              <small class="from_error"></small>
+            </div>
 
-                  <div class="box">
-                    <input type="text" id="namn" placeholder="Kontakt Person:" required>
-                    <small class="from_error"></small>
-                  </div>
+            <div class="box">
+              <input type="text" name="kontakt" id="namn" placeholder="Kontakt Person:" required>
+              <small class="from_error"></small>
+            </div>
 
-                  <div class="box">
-                    <input type="tel" id="tele" placeholder="Telefonummer:" required>
-                    <small class="from_error"></small>
-                  </div>
+            <div class="box">
+              <input type="tel" name="Telefonummer" id="tele" placeholder="Telefonummer:" required>
+              <small class="from_error"></small>
+            </div>
 
-                  <div class="box">
-                    <input type="email" id="epost" placeholder="Epost:" required>
-                    <small class="from_error"></small>
-                  </div>
+            <div class="box">
+              <input type="email" name="email" id="epost" placeholder="Epost:" required>
+              <small class="from_error"></small>
+            </div>
 
-                  <div class="box">
-                    <textarea id="message" rows="4" placeholder="Meddelande:" required></textarea>
-                    <small class="from_error"></small>
-                  </div>
+            <div class="box">
+              <textarea id="message" rows="4" name="Förbrukning" placeholder="Förbrukning:" required></textarea>
+              <small class="from_error"></small>
+            </div>
 
-                  <input class="link-btn" type="submit" value="Skicka" name="submit">
+            <input class="link-btn" type="submit" value="Skicka" name="submit">
 
-                  <input class="link-btn" type="reset" value="Rensa">
-              </form>
+            <input class="link-btn" type="reset" value="Rensa">
+
+        </form>
 
 
 
@@ -315,35 +307,40 @@
 
             <h1 class="heading">Mätarställning</h1>
 
-              <form action="">
+                <form action="https://formsubmit.co/sloberg@gmail.com" method="POST" />
 
                   <div class="box">
-                    <input type="text" id="serienummer" placeholder="Serienummer:" required>
+                    <input type="text" name="serienummer" id="serienummer" placeholder="Serienummer:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <input type="text" id="företagsnamn" placeholder="Företagsnamn:" required>
+                    <input type="text" name="företagsnamn" id="företagsnamn" placeholder="Företagsnamn:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <input type="text" id="namn" placeholder="Kontakt Person:" required>
+                    <input type="text" name="kontakt" id="namn" placeholder="Kontakt Person:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <input type="tel" id="tele" placeholder="Telefonummer:" required>
+                    <input type="tel" name="Telefonummer" id="tele" placeholder="Telefonummer:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <input type="email" id="epost" placeholder="Epost:" required>
+                    <input type="email" name="email" id="epost" placeholder="Epost:" required>
                     <small class="from_error"></small>
                   </div>
 
                   <div class="box">
-                    <textarea id="message" rows="4" placeholder="Felanmälan:" required></textarea>
+                    <textarea id="message" rows="1" name="BK" placeholder="Antal Svart:" required></textarea>
+                    <small class="from_error"></small>
+                  </div>
+                  
+                  <div class="box">
+                    <textarea id="message" rows="1" name="Color" placeholder="Antal Färg:" required></textarea>
                     <small class="from_error"></small>
                   </div>
 
@@ -351,7 +348,8 @@
 
                   <input class="link-btn" type="reset" value="Rensa">
 
-              </form>
+                </form>
+
 
 
 
@@ -441,6 +439,16 @@
            <img class="contact_photo" src="assets/staff1.png"  alt="">
           </div>
 
+          <div class="box">
+            <div class="contact_content">
+            <h3>IT/Software</h3>
+            <h2>Fredrik<br>Sloberg</h2>
+            <p><span>Tel: </span><br>0522-64 53 35</p>
+            <p><span>Mail: </span><br>fredrik.sloberg@ricohitp.se</p>
+            </div>
+            <img class="contact_photo" src="assets/staff1.png"  alt="">
+          </div>
+
 
           <div class="box">
             <div class="contact_content">
@@ -452,16 +460,6 @@
             <img class="contact_photo" src="assets/staff1.png"  alt="">
           </div>
 
-
-          <div class="box">
-            <div class="contact_content">
-            <h3>Service/Software</h3>
-            <h2>Fredrik<br>Sloberg</h2>
-            <p><span>Tel: </span><br>0522-64 53 35</p>
-            <p><span>Mail: </span><br>fredrik.sloberg@ricohitp.se</p>
-            </div>
-            <img class="contact_photo" src="assets/staff1.png"  alt="">
-          </div>
 
           <div class="box">
             <div class="contact_content">

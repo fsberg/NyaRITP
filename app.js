@@ -22,6 +22,29 @@ let supform = document.querySelector('.support .box-container .sup-form');
 let count_btn = document.querySelector('#count-btn');
 let countform = document.querySelector('.support .box-container .count-form');
 
+const downArrow = document.querySelector('.down_arrow');
+
+// function scrollDown() {
+//    const target = document.getElementById('about'); 
+//    target.scrollIntoView({ behavior: 'smooth' });
+// }
+
+function scrollDown() {
+   window.scrollBy({
+      top: 800,
+      behavior: 'smooth'
+   });
+}
+
+window.addEventListener('scroll', () => {
+   if (window.scrollY > 100) { 
+      downArrow.style.display = 'none';
+   } else {
+      downArrow.style.display = 'flex';
+   }
+});
+
+
 // mobil meny
 
 menu.onclick = () =>{
