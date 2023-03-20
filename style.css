@@ -145,7 +145,8 @@ section{
 }
 
 .home .content{
-
+    position: absolute;
+    top: 35vh;
     background: #333333e6;
     padding: 2rem;
     border-radius: .5rem;
@@ -350,8 +351,8 @@ section{
 /* support */
 
 .support{
-    margin: 4rem;
-    height: 45rem;
+    margin: 0rem;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
