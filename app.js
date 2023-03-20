@@ -22,8 +22,8 @@ let supform = document.querySelector('.support .box-container .sup-form');
 let count_btn = document.querySelector('#count-btn');
 let countform = document.querySelector('.support .box-container .count-form');
 
-const downArrow = document.querySelector('.down_arrow');
-
+let downArrow = document.querySelector('.down_arrow');
+let up_btn = document.querySelector('.up_btn');
 // function scrollDown() {
 //    const target = document.getElementById('about'); 
 //    target.scrollIntoView({ behavior: 'smooth' });
@@ -39,8 +39,20 @@ function scrollDown() {
 window.addEventListener('scroll', () => {
    if (window.scrollY > 100) { 
       downArrow.style.display = 'none';
+      downArrow.style.transition = '1s ease-in';
    } else {
       downArrow.style.display = 'flex';
+      downArrow.style.transition = '1s ease-out';
+   }
+});
+
+window.addEventListener('scroll', () => {
+   if (window.scrollY > 100) { 
+      up_btn.style.display = 'flex';
+
+   } else {
+      up_btn.style.display = 'none';
+
    }
 });
 

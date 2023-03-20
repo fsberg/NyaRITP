@@ -24,8 +24,8 @@
                 <img src="/assets/ricohlogo.png">
               </a> -->
               <!-- <a href="#home" class="logo">Attaxera <span>IT</span></a> -->
-              <img src="assets/qlosrlogowhite.png" ref="#home" class="logoimg">
-              <img src="assets/ritplogoblue.png" href="#home" class="logoimg_ricoh">
+              <a href="#home"><img src="assets/qlosrlogowhite.png" href="#home" class="logoimg"></a>
+              <a href="#home"><img src="assets/ritplogoblue.png" href="#home" class="logoimg_ricoh"></a>
             </div>
 
             <nav class="nav">
@@ -47,6 +47,12 @@
 
       </header>
 
+    <div class="up_btn fixed-bottom">
+      <a href="#home">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </div>
+
       <section class="home parallax" id="home">
 
         <div class="container">
@@ -65,26 +71,47 @@
         </div>
       </section>
 
-      <!-- <section class="news " id="news">
-        <div class="container">
+      <section class="news " id="news">
+        <div class="container">           
+        <div class="title">
+          <h3>Nyheter</h3>
+        </div>
 
-          <div class="row align-items-center">
-            <div class="news_content content">
-              <span>Nyheter</span>
-              <h3>Qloser</h3>
+        <div class="box ">
+          <div class="news_content">
+            <span>20 Mars 2023</span>
+            <h3>Ny hemsida</h3>
+            <p>RicohITP har lanserat en ny hemsida som är skräddarsydd för den svenska marknaden. Den nya sidan erbjuder en lättanvänd och intuitiv plattform för besökare att hitta information om företagets IT-lösningar och tjänster. Dessutom har hemsidan en tydlig översikt över RicohITP:s senaste projekt och kundreferenser. Genom att ta hänsyn till användarupplevelse och funktionalitet, har RicohITP skapat en modern och effektiv hemsida för sina svenska kunder. Besökare kan nu enkelt navigera och utforska RicohITP:s IT-lösningar med förtroende.</p>
+          
+          </div>
+          <div class="news_img">
+            <a href="https://ricohitp.se" target="_blank"><img src="/assets/Ricoh-1-1.png"  alt="img"></a>
+          </div>
+        </div>   
+
+        <div class="sep"></div>
+
+          <div class="box container">
+            <span>28 september 2022</span>
+            <div class="news_content">
+              <h3>Qlosr</h3>
               <p>Qlosr Group AB har den 28 september 2022 ingått avtal om att förvärva samtliga aktier i det Uddevalla- och Skövdebaserade bolaget Attaxera IT Aktiebolag. Företaget marknadsför sig idag under namnet Ricoh IT Partner AB.
 
               Qlosr Group AB är en helhetsleverantör av IT-lösningar vilket omfattar försäljning och leverans av paketerade prenumerationstjänster. Största delen av verksamheten bedrivs på den nordiska marknaden och består av paketerade IT-tjänster inom arbetsplats, nätverk och serverdrift. Bolagets tre primära målgrupper utgörs av små- och medelstora företag, offentlig sektor samt den privata skolsektorn med fokus på större nationella skolkoncerner.
               
-              Med denna information som underlag hänvisar vi till vår koncerns hemsida enligt nedan. Vi kommer även framgent att uppdatera vår befintliga hemsida med ett nytt utseende och senaste nyheter!</p>
+              Med denna information som underlag hänvisar vi till vår koncerns hemsida enligt nedan.</p>
+            
             </div>
-            <div class="news_image">
-            <img src="assets/qlosrlogowhite.png" class="col-md-6 image" alt="Qlosr">
+            <div class="news_img">
+              <a href="http://qlosr.se" target="_blank"><img src="/assets/logga_qlosr_ab.png"  alt="Qlosr"></a>
             </div>
-          </div>      
-        </div>
+          </div>  
 
-      </section> -->
+          <div class="title">
+            <a href="/news.html">Klicka här för äldre nyheter</a>
+          </div>
+        </div> 
+      </section>
 
       <section class="about" id="about">
         <div class="container">
@@ -173,14 +200,18 @@
       </section>
 
       <section class="support" id="support">
-        <!-- <div class="glass fixed-top"><h1>asdas</h1></div> -->
         <div class="box-container container">
 
-          <h1 class="heading">Support</h1>
+
 
         <div class="row align-items-center justify-content-around box-container vh-50" >
           <img src="assets/sup.jpg" class="image w-100 mb-5 md-mb-0" alt="">
           <div class="support_menu">
+          <div class="content">
+            <span>Support</span>
+            <h3>Lorem</h3>
+          </div>
+          <br>
           <div class="box link-btn" id="it-btn">IT-Support</div>
           <div class="box link-btn" id="fel-btn">Felanmälan</div>
           <div class="box link-btn" id="sup-btn">Förbrukning</div>
@@ -191,15 +222,11 @@
 
           <div class="it-form form">
             <div id="closeform" class="fas fa-times"></div>
-            <div class="ruta">
-            <h1 class="heading">IT-Support</h1>
-            <a href="https://get.teamviewer.com/ricohitp-remotesupport" target="_blank" class="link-btn">Remote Support</a>
-
-
+              <div class="ruta">
+                <h1 class="heading">IT-Support</h1>
+                <a href="https://get.teamviewer.com/ricohitp-remotesupport" target="_blank" class="link-btn">Remote Support</a>
+              </div>
             </div>
-          </div>
-
-
 
           <div class="fel-form form">
 
@@ -249,8 +276,6 @@
 
           </div>
 
-
-
           <div class="sup-form form">
 
             <div id="closeform" class="fas fa-times"></div>
@@ -298,8 +323,6 @@
 
 
           </div>
-
-
 
           <div class="count-form form">
 
@@ -355,15 +378,12 @@
 
           </div>
 
-
-
         </div>
       </div>
       </section>
 
       <section class="contact parallax" id="contact">
-
-        <h1 class="heading">Personal</h1>
+        <h3 class="heading">Personal</h3>
 
         <div class="box-container container">
 
@@ -523,6 +543,7 @@
             <h3>Uddevalla</h3>
             <h3>Telefon</h3>
             <i class="fas fa-phone"></i>
+            <br>
             <a href="tel:+46522645550">0500-64 55 50</a>
             <H3>Address</H3>
             <i class="fas fa-map-marker-alt"></i>
@@ -535,6 +556,7 @@
             <h3>Skövde</h3>
             <h3>Telefon</h3>
             <i class="fas fa-phone"></i>
+            <br>
             <a href="tel:+46500495990">0500-49 59 90</a>
             <H3>Address</H3>
             <i class="fas fa-map-marker-alt"></i>

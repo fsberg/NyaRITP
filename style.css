@@ -43,7 +43,10 @@ html{
 
 section{
     padding: 7rem 2rem;
+}
 
+.sep{
+    height: 80px;
 }
 
 .heading{
@@ -63,12 +66,13 @@ section{
     cursor: pointer;
     font-size: 1.7rem;
     color: var(--white);
+    transition: .2s ease-out;
 }
 
 .link-btn:hover{
     background-color:var(--light-color); /*var(--black)?!?!*/
     color: var(--white);
-
+    transition: .2s ease-in;
 }
 .header{
     background-color: var(--black);
@@ -115,10 +119,12 @@ section{
     margin: 0 1rem;
     font-size: 1.7rem;
     color: var(--white);
+    transition: .2s ease-out;
 }
 
 .header .nav a:hover{
     color: var(--blue);
+    transition: .2s ease-in;
 }
 
 #menu-btn{
@@ -126,6 +132,25 @@ section{
     color:var(--white);
     cursor: pointer;
     display: none;
+}
+
+.up_btn{
+    background-color: var(--black_opec);
+    left: 100vw;
+    transform: translateX(-40px);
+    display: none;
+    
+}
+
+.up_btn i{ 
+    color: var(--blue);
+    font-size: 4em;
+    transition: .1s ease-out;
+}
+
+.up_btn i:hover{ 
+    color: var(--black_opec);
+    transition: .1s ease-in;
 }
 
 /* HOME */
@@ -150,7 +175,7 @@ section{
     background: #333333e6;
     padding: 2rem;
     border-radius: .5rem;
-    width: 67rem;
+    width: 60rem;
 }
 
 .home .content h1{
@@ -162,7 +187,7 @@ section{
 
 .home .content p{
     line-height: 2;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: var(--white);
     padding: 1rem 0;
 }
@@ -177,7 +202,7 @@ section{
     justify-content: space-around;
     border-radius: 50%;
     bottom: 3vh;
-    left: 50vw;
+    left: 48.5vw;
 }
 
 
@@ -214,45 +239,57 @@ section{
     background-color: var(--light-bg);
     min-height: 90vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.news .container{
-    border: 2px solid red;
-    flex-direction: row;
 
+
+.news .title h3{
+    color: var(--black);
+    font-size: 4rem;
 }
 
-.news .news_content{
-    max-width: 600px;
-    border: 2px solid red;
+.news .title a{
+    color: var(--blue);
+    font-size: 2rem;
 }
 
-.news .news_content h1{
+.news .box{
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.news .news_content h3{
     color: var(--black);
     font-size: 5rem;
-    text-transform: uppercase;
 }
 
-.news .news_content p{
+.news .box .news_content p{
     line-height: 2;
-    font-size: 1.4rem;
+    font-size: 2em;
     color: var(--black);
     padding: 1rem 0;
 }
 
-.news .news_image img{
-    width: auto;
-    border: 2px solid red;
+.news_img{
+    display: flex;
+    justify-content: center;
 }
 
-.news .news_content span{
+.news_img img{
+    width: 30vw;
+}
+
+
+.news span{
     font-size: 2.5rem;
     color: var(--blue);
 }
 
-.news .news_content h3{
+.news  h3{
     font-size: 4rem;
     color: var(--black);
     margin-top: 1rem;
@@ -265,7 +302,7 @@ section{
 }
 
 /* ABOUT */
-.about .row{
+.about {
     min-height: 60vh;
 }
 
@@ -352,14 +389,32 @@ section{
 
 .support{
     margin: 0rem;
-    height: 100vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.support .content h3{
+    font-size: 4rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+.support .content p{
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 2;
+}
+
+.support .content span{
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
 .support .support_menu{
     display: grid;
+    grid-template-rows: 3fr;
     grid-template-columns: 1fr 1fr;
     gap: 5rem 8rem;
 }
@@ -409,21 +464,6 @@ section{
     width: 100%;
 }
 
-
-/* .glass{
-    width: 100%;
-    height:100em;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-}
-.glass.active{
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-    z-index: 5;
-    background-color:rgba(238, 238, 238, 0.199);
-}
- */
     /* ITSUPPORT */
 
 .support .box-container .form .ruta{
@@ -481,7 +521,7 @@ section{
     z-index: 9;
 }
 .support .box-container .count-form.active{
-       display: block;
+    display: block;
 }
 
 .support .image{
@@ -498,7 +538,7 @@ section{
 }
 
 .contact .heading{
-    color: var(--light-bg);
+    color: var(--black);
 }
 .contact .box-container{
     display: grid;
@@ -520,7 +560,7 @@ section{
 }
 
 .contact .box span{
-   font-weight: bolder
+    font-weight: bolder
 }
 .contact .box h3{
     color: var(--black);
@@ -561,6 +601,7 @@ section{
 
 .footer .box-container .box{
     text-align: center;
+
 }
 
 .footer .box-container i{
@@ -579,6 +620,12 @@ section{
 }
 
 .footer .box-container p{
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.footer .box-container a{
     color: var(--white);
     font-size: 1.5rem;
     line-height: 2;
@@ -635,6 +682,29 @@ section{
         padding: 2rem 1rem;
     }
 
+    
+    .up_btn i{ 
+        color: var(--blue);
+    }
+
+    .up_btn i:hover{ 
+        color: var(--blue);
+    }
+
+    .home{
+        background-position: left;
+        max-width: 768px;
+    }
+
+    .home .content{
+        position: absolute;
+        max-width: 450px;
+    }
+
+    .home .down_arrow{
+        left: 45vw;
+    }
+
     #menu-btn{
         display: inline-block;
         transition: .2s linear;
@@ -686,9 +756,27 @@ section{
         font-size: 50%;
     }
 
+    .up_btn i{ 
+        color: var(--blue);
+    }
+
+    .up_btn i:hover{ 
+        color: var(--blue);
+    }
+
     .home{
         background-position: left;
     }
+
+    .home .content{
+        position: absolute;
+        max-width: 350px;
+    }
+
+    .home .down_arrow{
+        left: 40vw;
+    }
+    
 
     .heading{
         font-size: 3rem;
