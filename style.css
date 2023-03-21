@@ -400,9 +400,9 @@ section{
 }
 
 .support .content h3{
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--black);
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .support .content p{
@@ -420,7 +420,7 @@ section{
     display: grid;
     grid-template-rows: 3fr;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem 8rem;
+    gap: 2rem;
 }
 
 .support .support_menu .link-btn{
