@@ -182,8 +182,12 @@ section{
     color: var(--white);
     font-size: 5rem;
     text-transform: uppercase;
-
 }
+
+.home .content a{
+    color: var(--white);
+}
+
 
 .home .content p{
     line-height: 2;
